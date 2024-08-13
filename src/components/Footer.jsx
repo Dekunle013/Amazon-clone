@@ -196,7 +196,7 @@ function FooterSection({ section }) {
   return (
     <div className="navGridB">
       <div className="footHeadline">
-        <h4>{section.title}</h4>
+        <h3>{section.title}</h3>
       </div>
       {section.links.map((link, index) => (
         <div className="getKnow" key={index}>
@@ -211,7 +211,7 @@ function ServiceLink({ service }) {
   return (
     <div className="navigateLastA">
       <a href="#">
-        <h6>{service.name}</h6>
+        <h4>{service.name}</h4>
         <span className="lastLast">{service.description}</span>
       </a>
     </div>
@@ -227,6 +227,9 @@ function FooterBottom() {
         </div>
         <div>
           <a href="#">Privacy Notice</a>
+        </div>
+        <div>
+          <a href="#">Consumer Health Data Privacy Disclosure</a>
         </div>
         <div>
           <a href="#">Your Ads Privacy Choices</a>
